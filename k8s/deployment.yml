@@ -16,15 +16,14 @@ spec:
   template:
     metadata:
       name: online-shop-pod
-      namespace: online-shop
       labels:
         app: online-shop-app
 
     spec:
       containers:
       - name: online-shop-container
-        image: nitingumberdev/online_shop_app:v1.0
+        image: nitingumberdev/online_shop_app:v0.2
         ports:
-         - containerPort: 5173
+         - containerPort: 80
 
 
